@@ -6,12 +6,12 @@ export default function Home() {
 
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-blue-700 text-white shadow-md">
-        <h1 className="text-2xl font-bold">SSC Maths by Vivek</h1>
+        <h1 className="text-2xl font-bold">VIVEK LEARNING </h1>
 
         <div className="space-x-6 text-sm md:text-base">
           <a href="#">Home</a>
-          <a href="#">Notes</a>
-          <a href="#">PYQ</a>
+          <a href="#">School</a>
+          <a href="#">Competitive</a>
           <a href="#">Mock Test</a>
           <a href="#">Contact</a>
         </div>
@@ -20,11 +20,11 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="text-center py-20 px-5 bg-gradient-to-b from-blue-50 to-white">
         <h2 className="text-4xl md:text-6xl font-bold text-blue-700">
-          Crack SSC Maths with Ease 🚀
+          LEARN SMARTER, ACHIEVE FASTER 🚀
         </h2>
 
         <p className="mt-5 text-gray-600 text-lg md:text-xl">
-          Best Notes • Practice Sets • Mock Tests • PYQs
+          School • Competitive Exams • Notes • Mock Tests • PYQs
         </p>
 
         <div className="mt-8 flex justify-center">
@@ -39,6 +39,42 @@ export default function Home() {
           Start Learning
         </button>
       </section>
+
+      <section className="py-16 bg-white">
+
+<h2 className="text-4xl font-bold text-center text-blue-700 mb-10">
+Choose Your Learning Path
+</h2>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10">
+
+<Link href="/school">
+  <div className="bg-blue-100 rounded-xl p-10 shadow-lg hover:scale-105 transition cursor-pointer">
+    <h3 className="text-3xl font-bold text-blue-700">
+      📚 School
+    </h3>
+
+    <p className="mt-4">
+      Class 6 • 7 • 8 • 9 • 10 • 11 • 12
+    </p>
+  </div>
+</Link>
+
+<Link href="/competitive">
+  <div className="bg-green-100 rounded-xl p-10 shadow-lg hover:scale-105 transition cursor-pointer">
+    <h3 className="text-3xl font-bold text-green-700">
+      🎯 Competitive Exams
+    </h3>
+
+    <p className="mt-4">
+      SSC • Railway • Banking • Police • CUET • CTET
+    </p>
+  </div>
+</Link>
+
+</div>
+
+</section>
 
       {/* STATS SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-3 text-center gap-6 px-10 py-10">
@@ -64,9 +100,13 @@ export default function Home() {
 
 <section className="py-16 bg-gray-100">
 
-<h2 className="text-4xl font-bold text-center text-blue-700 mb-10">
-SSC Maths Chapters
+<h2 className="text-4xl font-bold text-center text-blue-700 mb-4">
+  Explore Popular Courses
 </h2>
+
+<p className="text-center text-gray-600 mb-10">
+  Choose your subject and start learning today.
+</p>
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
 
