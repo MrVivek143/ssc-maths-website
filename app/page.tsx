@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
 
       {/* NAVBAR */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-blue-700 text-white shadow-md">
+      <nav className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-blue-700 text-white shadow-md">
         <h1 className="text-2xl font-bold">SSC Maths by Vivek</h1>
 
         <div className="space-x-6 text-sm md:text-base">
@@ -26,6 +26,14 @@ export default function Home() {
         <p className="mt-5 text-gray-600 text-lg md:text-xl">
           Best Notes • Practice Sets • Mock Tests • PYQs
         </p>
+
+        <div className="mt-8 flex justify-center">
+  <input
+    type="text"
+    placeholder="🔍 Search Chapter..."
+    className="w-full max-w-md border-2 border-blue-500 rounded-full px-5 py-3 outline-none focus:ring-4 focus:ring-blue-300"
+  />
+</div>
 
         <button className="mt-8 bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-900 transition">
           Start Learning
@@ -62,38 +70,82 @@ SSC Maths Chapters
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
 
-<div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
-<h3 className="text-2xl font-bold text-blue-700">Percentage</h3>
-<p className="mt-3 text-gray-600">
-Learn Percentage from Basic to Advanced.
-</p>
+<Link href="/percentage">
+  <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 hover:shadow-2xl transition cursor-pointer">
+    <h3 className="text-2xl font-bold text-blue-700">
+      Percentage
+    </h3>
 
- <Link href="/percentage">
-  <button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
-    Start
-  </button>
+    <p className="mt-3 text-gray-600">
+      Learn Percentage from Basic to Advanced.
+    </p>
+
+    <button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
+      Start Learning →
+    </button>
+  </div>
 </Link>
 
+<Link href="/ratio">
+  <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 hover:shadow-2xl transition cursor-pointer">
+    <h3 className="text-2xl font-bold text-blue-700">
+      Ratio & Proportion
+    </h3>
+
+    <p className="mt-3 text-gray-600">
+      Complete Ratio Questions with Tricks.
+    </p>
+
+    <button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
+      Start Learning →
+    </button>
+  </div>
+</Link>
+
+<Link href="/profit-loss">
+  <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 hover:shadow-2xl transition cursor-pointer">
+    <h3 className="text-2xl font-bold text-blue-700">
+      Profit & Loss
+    </h3>
+
+    <p className="mt-3 text-gray-600">
+      Master Profit & Loss for SSC Exams.
+    </p>
+
+    <button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
+      Start Learning →
+    </button>
+  </div>
+</Link>
+
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+  <h3 className="text-2xl font-bold text-blue-700">Average</h3>
+  <p className="mt-3 text-gray-600">Master Average Questions.</p>
 </div>
 
 <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
-<h3 className="text-2xl font-bold text-blue-700">Ratio & Proportion</h3>
-<p className="mt-3 text-gray-600">
-Complete Ratio Questions with Tricks.
-</p>
-<button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
-Start
-</button>
+  <h3 className="text-2xl font-bold text-blue-700">Simple Interest</h3>
+  <p className="mt-3 text-gray-600">Simple Interest Complete Course.</p>
 </div>
 
 <div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
-<h3 className="text-2xl font-bold text-blue-700">Profit & Loss</h3>
-<p className="mt-3 text-gray-600">
-Master Profit & Loss for SSC Exams.
-</p>
-<button className="mt-5 bg-blue-700 text-white px-5 py-2 rounded-lg">
-Start
-</button>
+  <h3 className="text-2xl font-bold text-blue-700">Compound Interest</h3>
+  <p className="mt-3 text-gray-600">Learn Compound Interest Easily.</p>
+</div>
+
+<div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+  <h3 className="text-2xl font-bold text-blue-700">Time & Work</h3>
+  <p className="mt-3 text-gray-600">Practice Time & Work Questions.</p>
+</div>
+
+<div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+  <h3 className="text-2xl font-bold text-blue-700">Time, Speed & Distance</h3>
+  <p className="mt-3 text-gray-600">Shortcut Tricks for TSD.</p>
+</div>
+
+<div className="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition">
+  <h3 className="text-2xl font-bold text-blue-700">Algebra</h3>
+  <p className="mt-3 text-gray-600">SSC Algebra from Basic to Advanced.</p>
 </div>
 
 </div>
@@ -101,20 +153,25 @@ Start
 </section>
 
 {/* Footer */}
-<footer className="bg-blue-700 text-white mt-20 py-8 text-center">
 
-  <h2 className="text-2xl font-bold">
-    SSC Maths by Vivek
-  </h2>
+<footer className="bg-blue-700 text-white py-10 mt-16">
+  <div className="text-center">
+    <h2 className="text-2xl font-bold">SSC Maths by Vivek</h2>
 
-  <p className="mt-3">
-    Learn SSC Maths with Free Notes, Practice Questions & Mock Tests.
-  </p>
+    <p className="mt-3">
+      Learn SSC Maths with Free Notes, PYQs and Mock Tests.
+    </p>
 
-  <p className="mt-5 text-sm">
-    © 2026 SSC Maths by Vivek. All Rights Reserved.
-  </p>
+    <div className="mt-5 flex justify-center gap-6">
+      <a href="#" className="hover:underline">YouTube</a>
+      <a href="#" className="hover:underline">Telegram</a>
+      <a href="#" className="hover:underline">Contact</a>
+    </div>
 
+    <p className="mt-8 text-sm">
+      © 2026 SSC Maths by Vivek. All Rights Reserved.
+    </p>
+  </div>
 </footer>
 
     </main>
