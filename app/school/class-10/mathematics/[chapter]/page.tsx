@@ -32,30 +32,40 @@ export default async function ChapterPage({
   </div>
 </Link>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
-          🎥
-          <h2 className="font-bold mt-3">Video Lectures</h2>
-        </div>
+    <Link href={`/school/class-10/mathematics/${chapter}/videos`}>
+  <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
+    🎥
+    <h2 className="font-bold mt-3">Video Lectures</h2>
+  </div>
+</Link>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
-          📝
-          <h2 className="font-bold mt-3">Practice Questions</h2>
-        </div>
+<Link href={`/school/class-10/mathematics/${chapter}/practice`}>
+  <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
+    📝
+    <h2 className="font-bold mt-3">Practice Questions</h2>
+  </div>
+</Link>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
-          📄
-          <h2 className="font-bold mt-3">PYQs</h2>
-        </div>
+<Link href={`/school/class-10/mathematics/${chapter}/pyqs`}>
+  <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
+    📄
+    <h2 className="font-bold mt-3">PYQs</h2>
+  </div>
+</Link>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
-          📥
-          <h2 className="font-bold mt-3">PDF Download</h2>
-        </div>
+<Link href={`/school/class-10/mathematics/${chapter}/pdf`}>
+  <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
+    📥
+    <h2 className="font-bold mt-3">PDF Download</h2>
+  </div>
+</Link>
 
-        <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
-          🧠
-          <h2 className="font-bold mt-3">Quiz</h2>
-        </div>
+<Link href={`/school/class-10/mathematics/${chapter}/quiz`}>
+  <div className="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:scale-105 transition">
+    🧠
+    <h2 className="font-bold mt-3">Quiz</h2>
+  </div>
+</Link>
 
       </div>
 
