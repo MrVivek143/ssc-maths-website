@@ -40,11 +40,11 @@ export default function School() {
           </div>
         </Link>
 
-        <Link href="#">
-          <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:scale-105 transition cursor-pointer">
-            Class 10
-          </div>
-        </Link>
+        <Link href="/school/class-10">
+  <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:scale-105 transition cursor-pointer">
+    Class 10
+  </div>
+</Link>
 
         <Link href="#">
           <div className="bg-white shadow-lg rounded-xl p-8 text-center hover:scale-105 transition cursor-pointer">

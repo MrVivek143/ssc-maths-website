@@ -5,17 +5,44 @@ export default function Home() {
     <main className="min-h-screen bg-white">
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-blue-700 text-white shadow-md">
-        <h1 className="text-2xl font-bold">VIVEK LEARNING </h1>
 
-        <div className="space-x-6 text-sm md:text-base">
-          <a href="#">Home</a>
-          <a href="#">School</a>
-          <a href="#">Competitive</a>
-          <a href="#">Mock Test</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
+<nav className="bg-blue-700 text-white shadow-lg">
+  <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+
+    <h1 className="text-2xl font-bold">
+      LearnHub India
+    </h1>
+
+    <div className="flex gap-6 font-semibold">
+
+      <a href="/ " className="hover:text-yellow-300">
+        Home
+      </a>
+
+      <a href="/school" className="hover:text-yellow-300">
+        School
+      </a>
+
+      <a href="/competitive" className="hover:text-yellow-300">
+        Competitive
+      </a>
+
+      <a href="/practice" className="hover:text-yellow-300">
+        Practice
+      </a>
+
+      <a href="/notes" className="hover:text-yellow-300">
+        Notes
+      </a>
+
+      <a href="/contact" className="hover:text-yellow-300">
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+</nav>
 
       {/* HERO SECTION */}
       <section className="text-center py-20 px-5 bg-gradient-to-b from-blue-50 to-white">
