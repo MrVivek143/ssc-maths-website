@@ -1,9 +1,15 @@
 import Link from "next/link";
+import Hero from "@/components/dashboard/Hero";
+import SearchBar from "@/components/dashboard/SearchBar";
+import Stats from "@/components/dashboard/Stats";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
 
+      <Hero />
+      <SearchBar />
+      <Stats />
       {/* NAVBAR */}
 
 <nav className="bg-blue-700 text-white shadow-lg">
