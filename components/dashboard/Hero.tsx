@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Hero() {
   return (
     <section className="rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-10 border border-slate-700 shadow-2xl">
@@ -13,13 +15,13 @@ export default function Hero() {
 
       <div className="mt-8 flex gap-4">
 
-        <button className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
+        <Button size="lg">
           Start Learning
-        </button>
+        </Button>
 
-        <button className="px-6 py-3 rounded-xl border border-slate-600 hover:border-blue-500 text-white transition">
+        <Button variant="outline" size="lg">
           Explore Courses
-        </button>
+        </Button>
 
       </div>
 
