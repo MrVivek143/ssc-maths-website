@@ -1,11 +1,11 @@
 "use client";
-
+import { Category } from "@/types/category";
 import { useEffect, useState } from "react";
 import { getCategories } from "@/services/categories";
 
 export function useCategories() {
 
-  const [categories, setCategories] = useState([]);
+ const [categories, setCategories] = useState<Category[]>([]);
 
   const [loading, setLoading] = useState(true);
 
