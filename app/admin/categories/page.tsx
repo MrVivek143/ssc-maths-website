@@ -1,15 +1,25 @@
+"use client";
+
+import { useState } from "react";
 import PageHeader from "@/components/admin/PageHeader";
+import AddCategoryModal from "@/components/admin/categories/AddCategoryModal";
 
 export default function CategoriesPage() {
-  return (
-    <div>
+  const [openModal, setOpenModal] = useState(false);
 
+  return (
+    <>
       <PageHeader
         title="Categories"
-        description="Manage all learning categories."
+        description="Manage all learning categories"
         buttonText="+ Add Category"
+        onClick={() => setOpenModal(true)}
       />
 
-    </div>
+      <AddCategoryModal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      />
+    </>
   );
 }
