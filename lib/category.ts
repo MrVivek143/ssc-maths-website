@@ -1,0 +1,55 @@
+import { supabase } from "@/lib/supabase";
+
+export async function getCategories() {
+  const { data, error } = await supabase
+    .from("categories")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  if (error) throw error;
+
+  return data;
+}
+
+export async function createCategory(category: {
+  name: string;
+  slug: string;
+  description: string;
+}) {
+  const { data, error } = await supabase
+    .from("categories")
+    .insert(category)
+    .select();
+
+  if (error) throw error;
+
+  return data;
+}
+
+export async function updateCategory(
+  id: string,
+  category: {
+    name: string;
+    slug: string;
+    description: string;
+  }
+) {
+  const { data, error } = await supabase
+    .from("categories")
+    .update(category)
+    .eq("id", id)
+    .select();
+
+  if (error) throw error;
+
+  return data;
+}
+
+export async function deleteCategory(id: string) {
+  const { error } = await supabase
+    .from("categories")
+    .delete()
+    .eq("id", id);
+
+  if (error) throw error;
+}

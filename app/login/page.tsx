@@ -36,11 +36,34 @@ const handleLogin = async (
 
   if (error) {
 
-    setError(error.message);
+  const message = error.message.toLowerCase();
 
-    return;
+  if (message.includes("invalid login credentials")) {
+
+    setError("❌ Invalid Email or Password.");
 
   }
+
+  else if (
+    message.includes("email not confirmed") ||
+    message.includes("verify")
+  ) {
+
+    setError(
+      "📧 Please verify your email first. A verification link has been sent to your email address."
+    );
+
+  }
+
+  else {
+
+    setError("⚠️ " + error.message);
+
+  }
+
+  return;
+
+}
 
   router.push("/dashboard");
 
